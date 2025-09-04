@@ -1,6 +1,12 @@
 body {
   text-align: center;
   background-color: darkgray;
+
+  font-family: 'Oswald', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20pt;
 }
 
 h1 {
@@ -8,4 +14,14 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 40pt;
+}
+
+ul {
+  padding: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: deeppink;
+  border-color: brown;
+  border-radius: 10px;
+  list-style-type: none;
 }

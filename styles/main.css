@@ -22,6 +22,8 @@ h3 {
   font-weight: 400;
   font-style: normal;
   font-size: 20pt;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 ul {
@@ -51,22 +53,12 @@ footer {
   height: 250px;
 }
 
-h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
 .roboto-test {
   font-family: 'Roboto', sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
-}
-
-.first-rec {
-  background: #e9ac29;
-  border-color: e9ac29;
 }
 
 .rec-box {
@@ -101,4 +93,16 @@ h3 {
 .header-link {
   border-radius: 10px;
   background: #91412e;
+}
+
+#my-name {
+  background-image: linear-gradient(to right, #91412e, darkslategrey);
+  color: transparent;
+  background-clip: text;
+}
+
+@media screen and (width < 450px) {
+  h1 {
+    font-size: 40pt;
+  }
 }

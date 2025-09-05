@@ -1,12 +1,13 @@
 body {
   text-align: center;
   background-color: darkgray;
-
-  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 300;
   font-style: normal;
-  font-size: 20pt;
+  font-variation-settings: 'wdth' 100;
+  font-size: 20px;
 }
 
 h1 {
@@ -16,12 +17,84 @@ h1 {
   font-size: 40pt;
 }
 
+h3 {
+  font-family: 'Germania One', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20pt;
+}
+
 ul {
-  padding: 10px;
-  margin-left: 25%;
-  margin-right: 25%;
-  background-color: deeppink;
-  border-color: brown;
-  border-radius: 10px;
   list-style-type: none;
+}
+
+li {
+  padding: 5px;
+}
+
+header {
+  background-color: darkslategrey;
+  width: 100%;
+  margin: 0;
+  height: 70px;
+  position: relative;
+  top: 0;
+}
+
+footer {
+  background-color: darkslategrey;
+  width: 100%;
+  margin: 50px 0 0 0;
+  height: 250px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.roboto-test {
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+.first-rec {
+  background: #e9ac29;
+  border-color: e9ac29;
+}
+
+.rec-box {
+  border-radius: 10px;
+  min-height: 60px;
+}
+
+.header-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+}
+
+.header-bar li {
+  display: inline-block;
+  padding: 15px;
+  font-family: 'Germania One', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20pt;
+}
+
+.post-grouping {
+  border-radius: 10px;
+  background: #91412e;
+  margin: 20px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.header-link {
+  border-radius: 10px;
+  background: #91412e;
 }

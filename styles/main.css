@@ -14,7 +14,7 @@ h1 {
   font-family: 'Germania One', system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 40pt;
+  font-size: 60pt;
 }
 
 h3 {
@@ -36,9 +36,12 @@ header {
   background-color: darkslategrey;
   width: 100%;
   margin: 0;
-  height: 70px;
+  height: auto;
   position: relative;
   top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -73,7 +76,7 @@ h3 {
 
 .header-bar {
   list-style-type: none;
-  margin: 0;
+  margin: 5;
   padding: 10;
 }
 
@@ -84,6 +87,7 @@ h3 {
   font-weight: 400;
   font-style: normal;
   font-size: 20pt;
+  margin: 5px;
 }
 
 .post-grouping {

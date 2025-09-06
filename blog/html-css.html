@@ -35,13 +35,16 @@
     <h1>Sprint two: Technical Blog</h1>
     <h3>The difference between display: block, inline, and inline-block.</h3>
     <p id="inline-paragraph">Display: block, inline, and inline-block all affect how content is displayed in relation to the elements around them. In short display: block creates a new line where only the element sits and pushes out an other element to another line. Automatically it takes all the available horizontal space but you can control its height and width with its height and width properties.<br>
-      Display: inline is the opposite, it does not push other elements to new lines or begin on a new line itself. But does not allow you to change its height and width properties.<br>
-      Display: inline-block is a mix of both. It is like inline in that it does not push element to a new line or begin on a new line, but does allow you to change its height and width properties.<br>
+      <span style="display: block; background-color: aliceblue;">display: block.</span><br>
+      Display: inline is the opposite, it does not push other elements to new lines or begin on a new line itself. But does not allow you to change its height and width properties.
+      <span style="display: inline; background-color: aliceblue;">display: inline.</span><br><br>
+      Display: inline-block is a mix of both. It is like inline in that it does not push element to a new line or begin on a new line, but does allow you to change its height and width properties.
+      <span style="display: inline-block; background-color: aliceblue; width: 400px;">display: inline-block, width: 400px</span>
     </p>
     <h3>Examples</h3>
     <div id="inline-examples">
       <p style="text-align: left;">
-        This <span style="display: inline; background-color: aliceblue; height: 50px; width: 60px;">span</span> has display: inline with the width and height set to 60px and 50px.<br><br>
+        This <span style="display: inline; background-color: aliceblue; height: 50px; width: 60px;">span</span> has display: inline with the width and height set to 60px and 50px, which does nothing.<br><br>
         And this  next<span style="display: block; background-color: aliceblue; height: 50px; width: 60px;">span</span> has display: block also with the width and height set to 60px and 50px.<br><br>
         And this <span style="display: inline-block; background-color: aliceblue; height: 50px; width: 60px;">span</span> has display: inline-block again with the width and height set to 60px and 50px..
       </p>

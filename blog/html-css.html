@@ -29,10 +29,37 @@
     </header>
 
     <h1>Sprint two: Technical Blog</h1>
+    <h3>The difference between display: block, inline, and inline-block.</h3>
+    <p>Display: block, inline, and inline-block all affect how content is displayed in relation to the elements around them. In short display: block creates a new line where only the element sits and pushes out an other element to another line. Automatically it takes all the available horizontal space but you can control its height and width with its height and width properties.
+      Display: inline is the opposite, it does not push other elements to new lines or begin on a new line itself. But does not allow you to change its height and width properties.
+      Display: inline-block is a mix of both. It is like inline in that it does not push element to a new line or begin on a new line, but does allow you to change its height and width properties.
+    </p>
+    <h4>Examples</h4>
+    <h4>Take aways</h4>
     <p style="padding: 10px">
-      display: block<br />
-      display: inline<br />
-      display: inline-block<br />
+      display: block
+      <ul>
+        <li>Take up all available the horizontal space of their container</li>
+        <li>Start on a new line</li>
+        <li>Push content after it to a new line</li>
+        <li>Have height and width properties you can change</li>
+      </ul>
+      <br />
+      display: inline
+      <ul>
+        <li>Take up only the size they need</li>
+        <li>Do not start on a new line</li>
+        <li>Does not push content after it to a new line</li>
+        <li>Do not have height and width properties you can change</li>
+      </ul>
+      <br />
+      display: inline-block
+      <ul>
+        <li>Don't take up all available horizontal space of thier container</li>
+        <li>Don't start a new line</li>
+        <li>Don't push content after to a new line</li>
+        <li>Do have a height and width properties you can change</li>
+      </ul>
     </p>
   </body>
 </html>

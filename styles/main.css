@@ -1,15 +1,15 @@
 :root {
-  --primary-color: blue;
-  --secondary-color: red;
-  --tertary-color: purple;
+  --primary-color: #b45252;
+  --secondary-color: #a77b5b;
+  --tertiary-color: #4b4158;
 }
 body {
   text-align: center;
-  background-color: darkgray;
+  background-color: var(--tertiary-color);
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
   font-size: 20px;
@@ -21,7 +21,7 @@ body {
 }
 
 #main-content {
-  background-color: darkslategrey;
+  background-color: var(--primary-color);
   border-radius: 100px;
   grid-template-rows: 1;
   grid-template-columns: 2;
@@ -62,7 +62,7 @@ li {
 }
 
 header {
-  background-color: darkslategrey;
+  background-color: var(--primary-color);
   width: 100%;
   margin: 0;
   height: auto;
@@ -76,7 +76,7 @@ header {
 }
 
 footer {
-  background-color: darkslategrey;
+  background-color: var(--primary-color);
   width: 100%;
   margin: 0 0 0 0;
   height: 200px;
@@ -115,7 +115,7 @@ footer {
 
 .post-grouping {
   border-radius: 10px;
-  background: #91412e;
+  background: var(--secondary-color);
   margin: 20px;
   padding: 10px;
   margin-top: 5px;
@@ -123,11 +123,15 @@ footer {
 
 .header-link {
   border-radius: 10px;
-  background: #91412e;
+  background: var(--secondary-color);
 }
 
 #my-name {
-  background-image: linear-gradient(to right, #91412e, darkgrey);
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color)
+  );
   color: transparent;
   background-clip: text;
 }
@@ -147,6 +151,17 @@ footer {
 #inline-paragraph {
   text-align: left;
   padding: 10px;
+}
+
+.main-content-paragraph {
+  text-align: left;
+  margin: 0px 25px 50px 25px;
+}
+
+.title-font {
+  font-family: 'Germania One', system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media screen and (width < 450px) {

@@ -38,6 +38,12 @@ h1 {
   font-size: 60pt;
 }
 
+.germania {
+  font-family: 'Germania One', system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h3 {
   font-family: 'Germania One', system-ui;
   font-weight: 400;

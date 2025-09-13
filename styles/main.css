@@ -173,6 +173,11 @@ footer {
   font-style: normal;
 }
 
+#main-content p {
+  padding: 0px 50px 50px 50px;
+  text-align: left;
+}
+
 @media screen and (width < 450px) {
   h1 {
     font-size: 40pt;

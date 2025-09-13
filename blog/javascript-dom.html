@@ -37,14 +37,15 @@
         <h3 style="margin-bottom: 20px">Javascript and the DOM</h3>
         <h4>Javascript, HTML, and CSS</h4>
         <p>
-          Html and css are static. They are the information and how it is
-          displayed to the user. They are written then they are static.
-          Javascript is how the things on your webpage change. If HTML is all
-          the infomation on the page, the links, the images, the words. Then css
-          is the styling, how it looks, which fonts and their sizes, the
-          positions of things on the page. Then Javascript is the animation that
-          pulls it all together. It can change things on the fly, words, images,
-          links.
+          Html and css are static or still, they are incapable of moving and
+          changing in response to the user. They are the information and how it
+          is displayed to the user. Javascript is how the things on your webpage
+          change.<br /><br />
+          If HTML is all the infomation on the page: the links, the images, the
+          words. Then css is the styling: how it looks, which fonts and their
+          sizes, the positions of things on the page. Then Javascript is the
+          animation that pulls it all together to make a dynamic page. It can
+          change things on the fly: words, images, links.
         </p>
         <h4>Control flow and Loops</h4>
         <p>
@@ -54,62 +55,77 @@
           then do D. This is done with if, else if, and else statements. Loops
           are how you might run the same piece of code as many times as you
           need, without knowing how many times that might be when you right it.
+          <br /><br />
           Say if you were making a recipe, before you start you would need to
           get all your ingredients, the control flow for that might look
-          something like this: If i have carrots then put them on the bench if i
-          don't have carrots then add to shopping list. Those "if's" are
-          controlling the flow of what is going to happen. IF you have carrots
-          THEN put them on the bench. IF you don't Then add them to the shopping
-          list. This same if x then y is used in programming in the same way,
+          something like this:<br /><br />
+          <strong>If</strong> i have carrots then put them on the bench.
+          <strong>If</strong> i don't have carrots then add to shopping list.
+          <br /><br />
+          Those "if's" and "thens" are controlling the flow of what is going to
+          happen.<br /><br />
+          <strong>IF</strong> you have carrots THEN put them on the bench.
+          <strong>IF</strong> you don't THEN add them to the shopping list.<br /><br />
+          This same if x then y is used in programming in the same way,
           controlling which lines of code are run and which aren't. In the same
           example you'd have to go through every ingredient you needed for the
           recipe and check if you have it or not. Thats a loop, doing the same
           thing over again, running the same code over again until a certain
-          checkmark is reached, normally with some things or variables changed,
-          in this example its the ingredient that changes each iteration or
+          checkmark is reached, normally with some things or variables changed.
+          In this example its the ingredient that changes each iteration or
           cycle of the loop until you reach the end of the ingredients list, and
           thats the end condition of the loop.
         </p>
         <h4>The DOM</h4>
         <p>
           The DOM is a way for information to be modeled, so that it can be
-          interacted with. document - webpages are documents - the root of the
-          trees after viewport object - a thing (element, attribute, etc) - a
-          node in the dom tree model - representation of information. It is a
-          way of organising the information in a web page, like html tags or css
-          classes or ids, and creating object equivalents of all that
-          information so that coding languages can access those object and
-          change thier properties or add new ones or delete them. In Javascript
-          you interact with the dom by calling document.theFunctionYouWant or by
-          calling element
+          interacted with. And in this case the way the information is modeled
+          is called a
+          <a href="https://en.wikipedia.org/wiki/Tree_(abstract_data_type)"
+            >tree</a
+          >. Which isn't super important for this explanation but might be
+          interesting.<br /><br />DOM stands for:<br />Document - webpages are
+          the documents<br />Object - a thing (element, attribute, etc) and is a
+          node in the DOM tree<br />Model - representation of information.
+          <br /><br />It is a way of organising the information in a web page,
+          like html tags or css classes or ids, and creating object equivalents
+          of all that information so that coding languages can access those
+          object and change thier properties or add new ones or delete them. In
+          Javascript you interact with the dom by calling
+          document.theFunctionYouWant() or by calling functions on a specific
+          element like someElementsID.someFunction().
         </p>
         <h4>Arrays and Objects</h4>
         <p>
-          Arrays are lists of information. They have a difinitive order,
-          starting at zero, where each item in the array has its own index.
+          Arrays are lists of information. They are a way of storing information
+          in a difinitive order, starting at zero, where each item in the array
+          has its own index e.g. list1 = [0, 1, 2, 3, 4] or even list2 =
+          ['apples', 'oranges', 'bananas'].<br /><br />
           Objects also are ways to store information however the information is
           unordered. There are no indexes of objects, instead information is
-          stored and retrived using key value pairs. Instead of an index
-          infomation is stored in the object with key to be used to retrieve
-          that information later. To access information from arrays you need to
-          used square brackets after the arrays name, and inside the square
-          brackets yo put the index you are accessing e.g. yourList[index]. To
-          access information from objects you can use a fullstop after the
-          object name, followed by the key of the key value pair you want to
-          access e.g. yourObject.yourKey
+          stored and retrived using key value pairs. Instead of an index,
+          information is stored in the object with key to be used to retrieve
+          that information later. <br /><br />To access information from arrays
+          you need to used square brackets after the arrays name, and inside the
+          square brackets you put the index you are accessing e.g.
+          yourList[index].<br /><br />To access information from objects you can
+          use a fullstop after the object name, followed by the key of the key
+          value pair you want to access e.g. yourObject.yourKey<br />
+          Or you can use square brackets as well e.g. yourObject[yourKey]
         </p>
         <h4>Functions</h4>
         <p>
-          Functions simply allow for you to avoid writting the same piece of
-          code over and over again. Often used bits of code can be put into
-          functions and called with functionNameHere(SomeVariable). You might
-          use it for summing numbers together or any number of things that you
-          think you will use more than once. Which will save you time, having to
-          write the code multiple times, and will take up less memory, and be
-          easier to change in the future. And because functions are separate
-          from the code that calls it, it also moves extraneous information away
-          from your other code, making it easy to read and understand what is
-          going on.
+          Functions simply allow for you to avoid writing the same piece of code
+          over and over again. Often used bits of code can be put into functions
+          and called with
+          <em>functionNameHere(SomeVariable)</em>.<br /><br />
+          You might use it for summing numbers together, printing to console, or
+          any number of things that you think you will use more than once. Which
+          will save you time having to write the code multiple times, will take
+          up less memory, and be easier to change in the future. Because
+          functions are separated from the code that calls it, it also moves
+          extraneous information away from your other code, making it easy to
+          read and understand what is going on.
         </p>
       </div>
     </div>

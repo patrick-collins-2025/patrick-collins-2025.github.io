@@ -31,10 +31,9 @@
     <div id="main-grid">
       <div></div>
       <div id="main-content">
-        <h4 style="margin-top: 10px">18/09/2025</h4>
-        <h1>Te Whare Tapa Wha</h1>
-        <p>PARAGRAPH</p>
-        <p></p>
+        <h4 style="margin-top: 10px">DATE</h4>
+        <h1>HEADER</h1>
+        <p>PARAGRAPH<p>
       </div>
     </div>
     <footer></footer>

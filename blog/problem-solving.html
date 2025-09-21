@@ -39,21 +39,20 @@
           different data types. Specifically I was trying to call
           myObject.values() much like you might call myArray.push(someVar). When
           I should have been using Object.values(myObject). To help solve the
-          issue I read the error message which was "TypeError: object.values is
-          not a function". Which was even more confusing because I was sure it
-          was a function. So instead I started googling, and ended up reading
-          the
+          issue I read the error message which was:<br /><br />
+          "TypeError: object.values is not a function".<br /><br />
+          Which was even more confusing because I was sure it was a function. So
+          instead I started googling, and ended up reading the
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values"
             >mdn</a
           >
           page for Object.values(), and where I experimented with the Javascript
-          demo on the page, where I managed to figure out the issue I was
-          having. Initially I felt frustrated and confused when first starting
-          out on this problem, but as I started to work things out I felt... not
-          quite statisfied, but maybe relief that I had figured out this
-          problem. Although I definitely felt good learning about object
-          prototypes.
+          demo on the page, and I managed to figure out the issue I was having.
+          Initially I felt frustrated and confused when first starting out on
+          this problem, but as I started to work things out I felt... not quite
+          statisfied, but maybe relief that I had figured out this problem.
+          Although I definitely felt good learning about object prototypes.
         </p>
         <h3>Solving a problem</h3>
         <p>
@@ -70,11 +69,11 @@
           with the forEach loop. I wanted to use the index of the students array
           to get the key in the gradebook but had some trouble creating a
           testScores key for the student object. I was trying something like:<br /><br />
-          scores.forEach(<br />
-          (score, index) => (gradebook.students.index.testScores = score))<br /><br />
-          And I was getting the error message:<br />
+          scores.forEach( (score, index) => (gradebook.students.index.testScores
+          = score))<br /><br />
+          And I was getting the error message:<br /><br />
           TypeError: can't access property "index", gradebook.students is
-          undefined<br />
+          undefined<br /><br />
           Which was very confusing because I had thought I had just defined my
           gradebook.students a line earlier, but now its undefined. So I added a
           console.log(gradebook), to make sure they still existed, which they
@@ -101,7 +100,7 @@
           <li>
             Reading error messages: I am pretty somewhat confident in reading
             error messages, in python. But less experienced reading them in
-            JavaScript
+            JavaScript.
           </li>
           <li>Googling: I am very confident in google issues I am having.</li>
           <li>

@@ -56,11 +56,81 @@
           prototypes.
         </p>
         <h3>Solving a problem</h3>
-        <p>PARAGRAPH</p>
-        <h3>Problem solving techniques</h3>
-        <p>PARAGRAPH</p>
+        <p>
+          A problem I enjoyed solved was the best way to assign the students
+          test scores array to each of the student objects stored in the
+          gradebook object. I wasn't sure immediately how to solve this issue.
+          Previously I searched up good ways to loop through an array, and read
+          a
+          <a
+            href="https://stackoverflow.com/questions/3010840/loop-through-an-array-in-javascript"
+            >stack overflow</a
+          >
+          talking about use cases for loops, which was very helpful. So I went
+          with the forEach loop. I wanted to use the index of the students array
+          to get the key in the gradebook but had some trouble creating a
+          testScores key for the student object. I was trying something like:<br /><br />
+          scores.forEach(<br />
+          (score, index) => (gradebook.students.index.testScores = score))<br /><br />
+          And I was getting the error message:<br />
+          TypeError: can't access property "index", gradebook.students is
+          undefined<br />
+          Which was very confusing because I had thought I had just defined my
+          gradebook.students a line earlier, but now its undefined. So I added a
+          console.log(gradebook), to make sure they still existed, which they
+          did, so I did some googling and found some
+          <a
+            href="https://www.freecodecamp.org/news/dot-notation-vs-square-brackets-javascript/"
+            >things</a
+          >
+          about dot and bracket notation that helped figure out I needed to use
+          the bracket notation to access the students correctly.
+        </p>
+        <h3 style="margin-bottom: 20px">My Problem solving techniques</h3>
+        <h4>Decent:</h4>
+        <ul class="point-list">
+          <li>
+            Pseudocode: I have used pseudocode before and have found it very
+            useful.
+          </li>
+          <li>
+            Trying Something: I am always down to try something and see if it
+            works or doesn't, or whether or not it give me a different error
+            message.
+          </li>
+          <li>
+            Reading error messages: I am pretty somewhat confident in reading
+            error messages, in python. But less experienced reading them in
+            JavaScript
+          </li>
+          <li>Googling: I am very confident in google issues I am having.</li>
+          <li>
+            Console.logging: Definitely a favourite of mine to problem solve.
+          </li>
+        </ul>
+        <h4>Not Good (Yet!):</h4>
+        <ul class="point-list">
+          <li>Rubber ducky method: Not something I have tried yet.</li>
+          <li>
+            Asking your peers for help: Also not something I have tried yet, and
+            I'm maybe a bit nervous to.
+          </li>
+          <li>Asking coaches for help: Again not something I have tried.</li>
+          <li>
+            Improving your process with reflection: And again not something I
+            have tried.
+          </li>
+        </ul>
         <h3>Asking for help</h3>
-        <p>PARAGRAPH</p>
+        <p>
+          I think I could have reached out to a peer or coach when I was stuck
+          on the dot vs bracket notation for accessing object properties. I
+          don't think I was intentionally reluctant to reach out. I think a lot
+          of my time coding has been solitary, so I have developed a lot of
+          problem solving skills outside of the ability to ask someone for help.
+          However maybe next time I'm stuck for a bit I'll shoot a message over
+          to the discord and see if anybody else has any ideas.
+        </p>
       </div>
     </div>
     <footer></footer>

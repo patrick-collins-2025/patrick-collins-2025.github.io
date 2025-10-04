@@ -1,4 +1,4 @@
-import { randI, randF } from './utility'
+import { randI, randF } from './utility.js'
 
 //
 // set word to change to
